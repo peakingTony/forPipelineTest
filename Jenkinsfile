@@ -24,12 +24,7 @@ pipeline{
 				}
 			}
 		}
-		stage('Result'){
-			post{
 
-			}
-		}
-	}
 }
 
 
