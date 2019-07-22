@@ -1,8 +1,6 @@
 pipeline{
 
-	agent{
-		any
-	}
+	agent any
 	environment{
 		mvnHome = tool 'maven'
 	}
@@ -28,9 +26,7 @@ pipeline{
 		}
 		stage('Result'){
 			post{
-			always{
 
-				}
 			}
 		}
 	}
