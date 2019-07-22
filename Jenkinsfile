@@ -1,5 +1,3 @@
-
-#for test 3
 pipeline{
 	agent{
 		any
