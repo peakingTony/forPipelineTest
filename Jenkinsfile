@@ -1,9 +1,6 @@
 pipeline{
 
 	agent any
-	environment{
-		mvnHome = tool 'maven'
-	}
 	stages{
 		stage('Preparation'){
 			when{
@@ -15,15 +12,10 @@ pipeline{
 		}
 		stage('Build'){
 			steps{
-				script{
-					if (false) {
-						sh 'ls'
-					}else{
-						sh 'pwd'
-					}
-				}
-			}
+				sh 'pwd'
+			}	
 		}
+
 	}
 }
 
